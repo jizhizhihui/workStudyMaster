@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.workStudy.core.project.mapper.JobMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.workStudy.core.project.entity.Job">
+            <id column="job_id" property="jobId" />
+            <result column="student_id" property="studentId" />
+            <result column="post_id" property="postId" />
+            <result column="manager_id" property="managerId" />
+            <result column="work_progress" property="workProgress" />
+            <result column="acc_check" property="accCheck" />
+            <result column="stu_remarks" property="stuRemarks" />
+            <result column="man_remarks" property="manRemarks" />
+            <result column="create_time" property="createTime" />
+            <result column="complete_time" property="completeTime" />
+            <result column="acc_check_time" property="accCheckTime" />
+        </resultMap>
+
+</mapper>
